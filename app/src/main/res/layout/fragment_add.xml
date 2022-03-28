@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Add.AddFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:scrollIndicators="bottom"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="210dp"
+                android:layout_height="280dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10sp"
+                android:contentDescription="Movie Image"
+                android:cropToPadding="true"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_lmovie_placeholder"
+                tools:src="@drawable/ic_lmovie_placeholder"
+                tools:visibility="visible" />
+
+            <EditText
+                android:id="@+id/movieName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:ems="10"
+                android:hint="Movie Name"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/movieLang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:ems="10"
+                android:hint="Language"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:ems="10"
+                android:hint="Release Year"
+                android:inputType="number"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="Select Categories:"
+                android:textSize="18sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/action_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Action"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/love_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Love Story"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/animation_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Animation"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/horror_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Horror"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/drama_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Drama"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/scifi_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Sci-fi"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                android:id="@+id/comedy_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="Comedy"
+                android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/adventure_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Adventure"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/fantasy_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Fantasy"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/crime_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Crime"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/edu_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Educational"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/student_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Student Life"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/tragedy_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Tragedy"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/friendship_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Friendship"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/suspense_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Suspense"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10sp"
+                android:text="Add Movie"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
